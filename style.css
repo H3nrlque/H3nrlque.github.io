@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 70px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #2196f3; /* azul */
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  background: #ff9800; /* laranja */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #fb8c00; /* laranja mais forte no hover */
+}
+
+/* Conteúdo principal */
+main {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  display: none;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #e3f2fd; /* azul claro */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+section.active {
+  display: block;
+}
+
+h2 {
+  color: #ff9800; /* laranja para títulos */
+  margin-bottom: 15px;
+}
+
+h3 {
+   color: #ff9800; /* laranja para títulos */ 
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  border: 2px solid #ffcc80; /* moldura laranja clara */
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  border-color: #fb8c00;
+}
+
+/* Rodapé fixo */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #fb8c00; /* laranja claro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 14px;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fb8c00;
+}
