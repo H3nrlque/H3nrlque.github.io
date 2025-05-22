@@ -75,7 +75,6 @@
       <p>Adotar é um ato de amor! O IPFER resgata animais em situação de abandono, oferece todos os cuidados veterinários e os prepara para adoção responsável. 
          Cada animal vai para o novo lar vacinado, vermifugado e castrado.</p>
       <ul>
-        <li>Veja os animais disponíveis no nosso <a href="https://www.instagram.com/patasfocinhos/" target="_blank">Instagram</a>.</li>
         <li>Preencha nosso formulário de adoção abaixo.</li>
         <li>Adote com responsabilidade e mude uma vida!</li>
       </ul>
@@ -87,6 +86,7 @@
       <h2>Doações</h2>
       <p>O Instituto Patas e Focinhos é mantido exclusivamente por doações. Toda ajuda faz a diferença na vida de centenas de animais.</p>
       <ul>
+        <li><strong>Banco:</strong> Banco do Brasil | Agência - 2041-9 | Conta Corrente - 29.816-6 </li>
         <li><strong>PIX:</strong> CNPJ 32.148.976/0001-00</li>
         <li><strong>Ajuda recorrente:</strong> entre em contato conosco pelo WhatsApp ou Instagram.</li>
         <li><strong>Doações físicas:</strong> ração, medicamentos e produtos de limpeza são bem-vindos!</li>
@@ -96,10 +96,26 @@
     <section id="galeria">
       <h2>Galeria</h2>
       <div class="galeria">
-        <img src="foto1.jpg" alt="Foto 1">
-        <img src="foto2.jpg" alt="Foto 2">
-        <img src="foto3.jpg" alt="Foto 3">
-        <!-- Adicione mais imagens aqui -->
+        <img src="imagens/foto1.webp" alt="Foto 1" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto2.jpg" alt="Foto 2" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto3.jpg" alt="Foto 3" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto4.jpg" alt="foto 4" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto5.jpg" alt="foto 5" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto6.jpg" alt="foto 6" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto7.jpg" alt="foto 7" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto8.jpg" alt="foto 8" onclick="abrirLightbox(this.src)">
+        <img src="imagens/foto9.jpg" alt="foto 9" onclick="abrirLightbox(this.src)">
+        <video controls onclick="abrirLightbox(this.querySelector('source').src)">
+            <source src="videos/video1.mp4" type="video/mp4">
+        </video>
+        <video controls onclick="abrirLightbox(this.querySelector('source').src)">
+            <source src="videos/video2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div id="lightbox" onclick="fecharLightbox(event)">
+        <span id="fechar">&times;</span>
+        <div id="lightbox-conteudo"></div>
       </div>
     </section>
 
@@ -108,6 +124,8 @@
       <p><strong>Telefone:</strong> (75) 9 9868-61660</p>
       <p><strong>Email:</strong> </p>
       <p><strong>Instagram:</strong> <a href="https://www.instagram.com/patasfocinhos/" target="_blank">@patasfocinhos</a></p>
+      <p><strong>Endereço:</strong> Rua do Calvário - Lot Bella Vista, Entre Rios, Bahia 48180000</p>
+      <p><strong>Grupo no WhatsApp:</strong> <a href="https://chat.whatsapp.com/CBRjFN97Qh6EZZbmYyXYYR?fbclid=PAZXh0bgNhZW0CMTEAAadIzHTKnto8EK1LAg6Sipd0FKYKMU9hdQKyuPCPZqgpcGRbWL7ymI3J1r0Qeg_aem_lmAQlNNTmaL4hhdteZHlyg" target="_blank"> PROTETORES DE ANIMAIS - IPFER </a></p>
     </section>
 
   </main>
